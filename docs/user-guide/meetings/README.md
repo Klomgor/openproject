@@ -8,7 +8,7 @@ keywords: meetings
 
 # Meeting management
 
-Meetings in OpenProject allow you to manage and document your project meetings, prepare a meeting agenda together with your team and document and share minutes with attendees, all in one central place.
+Meetings in OpenProject allow you to manage and document your project meetings, prepare a meeting agenda together with your team, and share minutes with attendees - all in one central place.
 
 <div class="glossary">
 **Meetings** is defined as a module that allows the organization of meetings.
@@ -31,7 +31,7 @@ Meetings in OpenProject allow you to manage and document your project meetings, 
 
 ## Meetings in OpenProject
 
-Meetings in OpenProject help teams organise discussions, track meeting agendas, and document decisions efficiently. There are three types of meetings: **one-time meetings**, **recurring meetings**, and **classic meetings**. [One-time meetings](one-time-meetings/) are standalone events scheduled for a specific date and time. [Recurring meetings](recurring-meetings/) introduce a structured way to define a series of related meetings, ensuring consistency and reducing manual setup. [Classic meetings](classic-meetings/) are also standalone events, but are a legacy format that will be eventually be phased out.
+Meetings in OpenProject help teams organize discussions, track meeting agendas, and document decisions efficiently. There are three types of meetings: **one-time meetings**, **recurring meetings**, and **classic meetings**. [One-time meetings](one-time-meetings/) are standalone events scheduled for a specific date and time. [Recurring meetings](recurring-meetings/) introduce a structured way to define a series of related meetings, ensuring consistency and reducing manual setup. [Classic meetings](classic-meetings/) are also standalone events, but are a legacy format that will eventually be phased out.
 
 ### Meetings overview
 

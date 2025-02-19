@@ -70,10 +70,6 @@ class WorkPackage::PDFExport::DocumentGenerator < Exports::Exporter
     )
   end
 
-  def hyphenation_language
-    options[:hyphenation]
-  end
-
   def heading
     options[:header_text_right]
   end

@@ -673,7 +673,7 @@ GEM
     http-2 (1.0.2)
     http_parser.rb (0.6.0)
     httpclient (2.8.3)
-    httpx (1.4.0)
+    httpx (1.3.4)
       http-2 (>= 1.0.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
@@ -1077,9 +1077,10 @@ GEM
       rubocop (~> 1.61)
     rubocop-openproject (0.2.0)
       rubocop
-    rubocop-performance (1.23.1)
-      rubocop (>= 1.48.1, < 2.0)
-      rubocop-ast (>= 1.31.1, < 2.0)
+    rubocop-performance (1.24.0)
+      lint_roller (~> 1.1)
+      rubocop (>= 1.72.1, < 2.0)
+      rubocop-ast (>= 1.38.0, < 2.0)
     rubocop-rails (2.30.1)
       activesupport (>= 4.2.0)
       lint_roller (~> 1.1)
@@ -1331,7 +1332,7 @@ DEPENDENCIES
   grids!
   html-pipeline (~> 2.14.0)
   htmldiff
-  httpx
+  httpx (~> 1.3.4)
   i18n-js (~> 4.2.3)
   i18n-tasks (~> 1.0.13)
   ice_cube (~> 0.17.0)
@@ -1649,7 +1650,7 @@ CHECKSUMS
   http-2 (1.0.2) sha256=607004ffec28fcb5c392cccaef22d9ffe5b5575fc859ab665fb426a14cf3a83c
   http_parser.rb (0.6.0) sha256=f11d0aec50ef26a7d1f991e627ac88acdb5979282aeba7a5c3be6ce0636ed196
   httpclient (2.8.3) sha256=2951e4991214464c3e92107e46438527d23048e634f3aee91c719e0bdfaebda6
-  httpx (1.4.0) sha256=5a6c849a823cea443ee182039e617db0e9071efb87c612b9a1ba7abdc151f837
+  httpx (1.3.4) sha256=d90bac25b909184479af1bd95e66b0a336a11d76076342caae5809ffd7d63799
   i18n (1.14.7) sha256=ceba573f8138ff2c0915427f1fc5bdf4aa3ab8ae88c8ce255eb3ecf0a11a5d0f
   i18n-js (4.2.3) sha256=ffb1a6d34afebd9ab2aff9bd86e8f2873191cbe8b9ac5c2c8efe4dfa1107ca3b
   i18n-tasks (1.0.14) sha256=3ad8daef2a3268d6dc2232aad2b12941b353d884cd30fd3b418a73e7001a03ec
@@ -1836,7 +1837,7 @@ CHECKSUMS
   rubocop-capybara (2.21.0) sha256=5d264efdd8b6c7081a3d4889decf1451a1cfaaec204d81534e236bc825b280ab
   rubocop-factory_bot (2.26.1) sha256=8de13cd4edcee5ca800f255188167ecef8dbfc3d1fae9f15734e9d2e755392aa
   rubocop-openproject (0.2.0) sha256=2300ed6b638a34a9368b458dc5fb618ae396da6a27670b50519ad1e3cea65ccb
-  rubocop-performance (1.23.1) sha256=f22f86a795f5e6a6180aac2c6fc172534b173a068d6ed3396d6460523e051b82
+  rubocop-performance (1.24.0) sha256=e5bd39ff3e368395b9af886927cc37f5892f43db4bd6c8526594352d5b4440b5
   rubocop-rails (2.30.1) sha256=5eb39fbfce4e63fb0d79d48ba9a3fbc23d33dd9fa4585b8f9c811056fe156c10
   rubocop-rspec (3.5.0) sha256=710c942fe1af884ba8eea75cbb8bdbb051929a2208880a6fc2e2dce1eed5304c
   rubocop-rspec_rails (2.30.0) sha256=888112e83f9d7ef7ad2397e9d69a0b9614a4bae24f072c399804a180f80c4c46

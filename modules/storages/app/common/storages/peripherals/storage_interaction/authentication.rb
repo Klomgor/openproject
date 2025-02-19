@@ -62,7 +62,7 @@ module Storages
           auth_strategy = AuthenticationStrategies::OAuthUserToken.strategy.with_user(user)
 
           Registry
-            .resolve("#{storage}.queries.auth_check")
+            .resolve("#{storage}.queries.user")
             .call(storage:, auth_strategy:)
             .match(
               on_success: ->(*) { :connected },

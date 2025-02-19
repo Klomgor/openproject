@@ -28,42 +28,9 @@
 # See COPYRIGHT and LICENSE files for more details.
 #++
 
-module Storages
-  module Peripherals
-    module StorageInteraction
-      module OneDrive
-        class AuthCheckQuery
-          def self.call(storage:, auth_strategy:)
-            new(storage).call(auth_strategy:)
-          end
-
-          def initialize(storage)
-            @storage = storage
-          end
-
-          def call(auth_strategy:)
-            Authentication[auth_strategy].call(storage: @storage) do |http|
-              handle_response http.get(UrlBuilder.url(@storage.uri, "/v1.0/me"))
-            end
-          end
-
-          private
-
-          def handle_response(response)
-            case response
-            in { status: 200..299 }
-              ServiceResult.success
-            in { status: 401 }
-              ServiceResult.failure(result: :unauthorized, errors: StorageError.new(code: :unauthorized))
-            in { status: 403 }
-              ServiceResult.failure(result: :forbidden, errors: StorageError.new(code: :forbidden))
-            else
-              data = StorageErrorData.new(source: self.class, payload: response)
-              ServiceResult.failure(result: :error, errors: StorageError.new(code: :error, data:))
-            end
-          end
-        end
-      end
+module WorkPackages
+  module Types
+    class ExportConfigurationComponent < ApplicationComponent
     end
   end
 end

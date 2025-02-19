@@ -599,15 +599,15 @@ de:
         tab: "Einstellungen"
         type_color_text: "Die ausgewählte Farbe unterscheidet verschiedene Typen\nin Gantt-Diagrammen und Arbeitspakettabellen. Es wird daher empfohlen, gut unterscheidbare Farben zu verwenden."
       subject_configuration:
-        tab: "Subject configuration"
+        tab: "Titel konfigurieren"
         manually_editable_subjects:
-          label: "Manuell bearbeitbare Themen"
-          caption: "Benutzer können die Themen der Arbeitspakete ohne Einschränkungen manuell eingeben und bearbeiten."
+          label: "Manuell bearbeitbare Titel"
+          caption: "Benutzer können die Titel der Arbeitspakete ohne Einschränkungen manuell eingeben und bearbeiten."
         automatically_generated_subjects:
-          label: "Automatisch generierte Themen"
-          caption: "Definieren Sie ein Schema aus referenzierten Attributen und Freitext für die automatische Generierung von Arbeitspaketthemen. Nutzer können diese nicht manuell editieren."
+          label: "Automatisch generierte Titel"
+          caption: "Definieren Sie ein Schema aus referenzierten Attributen und Freitext für die automatische Generierung von Arbeitspakettiteln. Nutzer können diese nicht manuell editieren."
         pattern:
-          label: "Thema-Schema"
+          label: "Titel-Schema"
           caption: "Suchen Sie nach einem Attribut oder fügen Sie Text hinzu. Um ein Leerzeichen zwischen Elementen zu erstellen, fügen Sie es als Text hinzu."
   versions:
     overview:

@@ -32,7 +32,7 @@ module Storages
   module Peripherals
     NextcloudRegistry = Dry::Container::Namespace.new("nextcloud") do
       namespace("queries") do
-        register(:auth_check, StorageInteraction::Nextcloud::AuthCheckQuery)
+        register(:user, StorageInteraction::Nextcloud::UserQuery)
         register(:capabilities, StorageInteraction::Nextcloud::CapabilitiesQuery)
         register(:download_link, StorageInteraction::Nextcloud::DownloadLinkQuery)
         register(:file_info, StorageInteraction::Nextcloud::FileInfoQuery)

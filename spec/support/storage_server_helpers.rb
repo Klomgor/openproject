@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 #-- copyright
 # OpenProject is an open source project management software.
 # Copyright (C) the OpenProject GmbH
@@ -129,6 +131,11 @@ module StorageServerHelpers
     end
   end
 
+  def stub_nextcloud_user_query(host)
+    stub_request(:get, normalize_url("#{host}/ocs/v1.php/cloud/user"))
+      .to_return(status: 200, body: File.read("modules/storages/spec/support/payloads/nextcloud_user_query_success.xml"))
+  end
+
   def stub_outbound_storage_files_request_for(storage:, remote_identity:)
     root_xml_response = build(:webdav_data)
     folder1_xml_response = build(:webdav_data_folder)
@@ -152,7 +159,7 @@ module StorageServerHelpers
       .to_return(status: 207, body: folder1_xml_response, headers: {})
     stub_request(:get, normalize_url("#{storage.host}/ocs/v1.php/apps/integration_openproject/fileinfo/11"))
       .to_return(status: 200, body: folder1_fileinfo_response.to_json, headers: {})
-    stub_request(:get, normalize_url("#{storage.host}/ocs/v1.php/cloud/user")).to_return(status: 200, body: "{}")
+    stub_nextcloud_user_query(storage.host)
     stub_request(
       :delete,
       normalize_url("#{storage.host}/remote.php/dav/files/OpenProject/OpenProject/" \

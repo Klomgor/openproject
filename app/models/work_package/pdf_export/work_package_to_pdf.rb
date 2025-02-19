@@ -80,7 +80,7 @@ class WorkPackage::PDFExport::WorkPackageToPdf < Exports::Exporter
   end
 
   def footer_title
-    work_package.project.name
+    options[:footer_text_right]
   end
 
   def title

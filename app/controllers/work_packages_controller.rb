@@ -98,12 +98,21 @@ class WorkPackagesController < ApplicationController
   end
 
   def generate_pdf
-    exporter = WorkPackage::PDFExport::DocumentGenerator.new(work_package, params)
-    export = exporter.export!
+    export = work_package_exporter.export!
     send_data(export.content, type: export.mime_type, filename: export.title)
   rescue ::Exports::ExportError => e
     flash[:error] = e.message
     redirect_back(fallback_location: work_package_path(work_package))
+  end
+
+  def work_package_exporter
+    case params[:template]
+    when "contract"
+      WorkPackage::PDFExport::DocumentGenerator.new(work_package, params)
+    else
+      # when "attributes"
+      WorkPackage::PDFExport::WorkPackageToPdf.new(work_package, params)
+    end
   end
 
   def show_conflict_flash_message

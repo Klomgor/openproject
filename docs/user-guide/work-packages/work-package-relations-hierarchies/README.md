@@ -123,7 +123,7 @@ Type the name of the new work package or select an existing one, then click the 
 
 When creating a new work package as a child, you will be asked to select type, a subject and optionally add description text. If there are required fields for the type selected, they will also appear here.
 
-![Create a new child work package under relations tab in OpenProject](openproject_user_guide_wp_add_child_new.png)
+![Create a new child work package under Relations tab in OpenProject](openproject_user_guide_wp_add_child_new.png)
 
 ![Select a child work package in OpenProject](openproject_user_guide_wp_add_child_select.png)
 

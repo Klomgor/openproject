@@ -140,6 +140,19 @@ Rails.application.routes.draw do
           action: "update_subject_configuration"
     end
 
+    resources :pdf_export_template, only: %i[],
+                                    controller: "work_packages/types/pdf_export_template",
+                                    path: "pdf_export_template" do
+      member do
+        post :toggle
+        put :drop
+      end
+      collection do
+        put :enable_all
+        put :disable_all
+      end
+    end
+
     collection do
       post "move/:id", action: "move"
     end

@@ -43,6 +43,8 @@ RSpec.describe("Activation of storages in projects",
                :storage_server_helpers,
                :webmock,
                with_settings: { notifications_polling_interval: 1_000 }) do
+  include Flash::Expectations
+
   let(:user) { create(:user) }
   # The first page is the Project -> Settings -> General page, so we need
   # to provide the user with the edit_project permission in the role.
@@ -105,7 +107,7 @@ RSpec.describe("Activation of storages in projects",
                                 options: ["#{storage.name} (#{storage})"])
     page.click_on("Continue")
 
-    # by default automatic have to be choosen if storage has automatic management enabled
+    # by default automatic have to be chosen if storage has automatic management enabled
     expect(page).to have_checked_field("New folder with automatically managed permissions")
 
     page.find_by_id("storages_project_storage_project_folder_mode_manual").click
@@ -124,6 +126,8 @@ RSpec.describe("Activation of storages in projects",
     # Add storage
     expect(page).to have_text("Folder1")
     page.click_on("Add")
+
+    expect_and_dismiss_flash(message: "Successful creation.")
 
     # The list of enabled file storages should now contain Storage 1
     expect(page).to have_css("h1", text: "Files")
@@ -145,6 +149,8 @@ RSpec.describe("Activation of storages in projects",
     page.find_by_id("storages_project_storage_project_folder_mode_inactive").click
     expect(page).to have_no_text("Folder1")
     page.click_on("Save")
+
+    expect_and_dismiss_flash(message: "Successful update.")
 
     # The list of enabled file storages should still contain Storage 1
     expect(page).to have_css("h1", text: "Files")

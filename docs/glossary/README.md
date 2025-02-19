@@ -228,7 +228,7 @@ Macros in OpenProject are dynamic shortcuts that help automate repetitive tasks.
 
 ### Meetings
 
-OpenProject offers a Meetings [module](#module) that allows project members to organise and facilitate meetings. The module has to be activated in the [project settings](#project-settings) by a project admin in order to be displayed in the side navigation. You can choose between classic meetings, one-time meetings and recurring meetings. Please note that classic meetings will be deprecated in the long term. [See our user guide for more information on Meeting management in OpenProject](../user-guide/meetings/).
+OpenProject offers a Meetings [module](#module) that allows project members to organize and facilitate meetings. The module has to be activated in the [project settings](#project-settings) by a project admin in order to be displayed in the side navigation. You can choose between classic meetings, one-time meetings and recurring meetings. Please note that classic meetings will be deprecated in the long term. [See our user guide for more information on Meeting management in OpenProject](../user-guide/meetings/).
 
 ### Member
 

@@ -10,7 +10,7 @@ keywords: meetings, dynamic meetings, agenda, minutes, one-time meeting
 
 With OpenProject 15.3, meetings were enhanced by introducing a clear distinction between **one-time meetings** and **recurring meetings**. This page covers the features and functionalities of one-time meetings in OpenProject.
 
-For information on setting up recurring meeting series and templates, please refer to [this page](../recurring-meetings). Note that individual occurrences of a recurring meeting series are one-time meetings and have the same features described here.
+For information on setting up recurring meeting series and templates, please refer to [this page](../recurring-meetings). Note that individual occurrences of a recurring meeting series are one-time meetings and have the same features as described here.
 
 > [!NOTE]
 > The **Meetings module needs to be activated** in the [Project settings](../../projects/project-settings/modules/) to be able to create and edit meetings.
@@ -56,7 +56,7 @@ If you are creating a meeting from a global module you will first need to select
 > - 90min
 > - 1:30
 
-Click the **Create meeting** button to save your changes. You can proceed to adding more meeting details.
+Click the **Create meeting** button to save your changes. You can  then proceed to add more details to the meeting.
 
 ### Create or edit the meeting agenda
 
