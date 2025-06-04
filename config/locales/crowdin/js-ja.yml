@@ -332,7 +332,7 @@ ja:
         notification: "関連を作成するには、強調表示されたワークパッケージをクリックします。キャンセルするにはエスケープキーを押してください。"
       zoom:
         in: "拡大"
-        out: "拡大"
+        out: "縮小"
         auto: "自動ズーム"
         days: "日"
         weeks: "週"
@@ -429,7 +429,7 @@ ja:
     label_expanded: "展開"
     label_expand_all: "全てを展開"
     label_expand_project_menu: "プロジェクトメニューを展開"
-    label_export: "外部出力"
+    label_export: "エクスポート"
     label_export_preparing: "エクスポートは準備中です。まもなくダウンロードされます。"
     label_favorites: "Favorites"
     label_filename: "ファイル"
@@ -551,18 +551,18 @@ ja:
     label_drop_folders_hint: フォルダを添付ファイルとしてアップロードすることはできません。 単一のファイルを選択してください。
     label_add_attachments: "ファイルを添付"
     label_formattable_attachment_hint: "このフィールドにドロップ、またはクリップボードから貼り付けて、ファイルを添付およびリンクします。"
-    label_remove_file: "%{fileName}を削除"
-    label_remove_watcher: "ウォッチャー%{name}を削除"
+    label_remove_file: "%{fileName} を削除"
+    label_remove_watcher: "ウォッチャー %{name} を削除"
     label_remove_all_files: 全てのファイルを削除
-    label_add_description: "%{file}の説明を追加"
+    label_add_description: "%{file} の説明を追加"
     label_upload_notification: "ファイルをアップロード中..."
-    label_work_package_upload_notification: "作業項目#%{id}: %{subject}用ファイルをアップロード中"
-    label_wp_id_added_by: "#%{id}が%{author}によって追加されました"
+    label_work_package_upload_notification: "作業項目#%{id}: %{subject} 用ファイルをアップロード中"
+    label_wp_id_added_by: "#%{id} が %{author} によって追加されました"
     label_files_to_upload: "これらのファイルをアップロードします:"
     label_rejected_files: "これらのファイルをアップロードできません："
-    label_rejected_files_reason: "ファイルサイズが%{maximumFilesize}を越えたために、これらのファイルをアップロードできません"
+    label_rejected_files_reason: "ファイルサイズが %{maximumFilesize} を越えたために、これらのファイルをアップロードできません"
     label_wait: "構成をお待ちください..."
-    label_upload_counter: "%{count}ファイルの中に%{done}が完了"
+    label_upload_counter: "%{done} / %{count} 個のファイルが完了"
     label_validation_error: "次のエラーのために作業項目を保存できませんでした:"
     label_version_plural: "バージョン"
     label_view_has_changed: "このビューには未保存の変更があります。 クリックすると保存します。"
@@ -762,7 +762,7 @@ ja:
           last_day: "Last day"
     text_are_you_sure: "よろしいですか？"
     text_data_lost: "All entered data will be lost."
-    text_user_wrote: "%{value}が書き込みました："
+    text_user_wrote: "%{value} が書き込みました："
     types:
       attribute_groups:
         error_duplicate_group_name: "名前 %{group} が複数回使用されています。グループ名は一意にする必要があります。"
@@ -1152,8 +1152,8 @@ ja:
       null_value_label: "値なし"
       clear_value_label: "-"
       errors:
-        required: "%{field}を空にできません"
-        number: "%{field}は有効な数値ではありません"
+        required: "%{field} を空にできません"
+        number: "%{field} は有効な数値ではありません"
         maxlength: "%{field} は %{maxLength} 以上の桁の数字を入れることはできません"
         minlength: "%{field} は %{minLength} 未満の桁の数字を入れることはできません"
         messages_on_field: "このフィールドは無効です: %{messages}"
@@ -1172,7 +1172,7 @@ ja:
         zero: "0 h"
       day:
         one: "1 day"
-        other: "%{count}日間"
+        other: "%{count} 日間"
         zero: "0 days"
       word:
         other: "%{count} words"

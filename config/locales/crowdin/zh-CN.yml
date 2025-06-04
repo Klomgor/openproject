@@ -746,8 +746,8 @@ zh-CN:
     lag:
       subject: "间隔"
       caption: |-
-        The minimum number of working days to keep in between the two work packages.
-        It can also be negative.
+        两个工作包间的最少工作日数。
+        也可以是负数。
     relations:
       label_new_child_created: "创建新工作包并将其添加为子项"
       label_relates_singular: "关联到"
@@ -2560,8 +2560,8 @@ zh-CN:
   label_deleted_custom_item: "(删除项目)"
   label_deleted_custom_option: "（删除的选项）"
   label_empty_element: "（空）"
-  label_go_back: "Go back one menu level"
-  label_go_forward: "Open %{module} sub-menu"
+  label_go_back: "返回一级菜单"
+  label_go_forward: "打开 %{module} 子菜单"
   label_missing_or_hidden_custom_option: "（缺少值或缺少访问权限）"
   label_descending: "降序"
   label_details: "详细信息"

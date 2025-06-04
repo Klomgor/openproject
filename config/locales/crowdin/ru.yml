@@ -772,8 +772,8 @@ ru:
     lag:
       subject: "Отставание"
       caption: |-
-        The minimum number of working days to keep in between the two work packages.
-        It can also be negative.
+        Минимальное количество рабочих дней, которое должно быть между двумя пакетами работ.
+        Оно также может быть отрицательным.
     relations:
       label_new_child_created: "Новый пакет работ создан и добавлен как дочерний"
       label_relates_singular: "Связан с"
@@ -989,10 +989,10 @@ ru:
       project/phase:
         date_range: "Диапазон дат"
         definition: "Описание"
-        duration: "Duration"
-        start_date: "Start date"
-        start_date_caption: "Follows the previous phase."
-        finish_date: "Finish date"
+        duration: "Продолжительность"
+        start_date: "Дата начала"
+        start_date_caption: "Следует предыдущей фазе."
+        finish_date: "Дата окончания"
       project/phase_definition:
         name: "Имя"
         color: "Цвет"
@@ -1305,11 +1305,11 @@ ru:
         project/phase:
           attributes:
             start_date:
-              must_be_before_finish_date: "must be before the finish date."
-              non_continuous_dates: "can't be earlier than the previous phase's end date."
+              must_be_before_finish_date: "должно быть до даты окончания."
+              non_continuous_dates: "не может быть раньше, чем дата окончания предыдущей фазы."
             finish_date:
-              must_be_after_start_date: "must be after the start date."
-          cannot_be_a_non_working_day: "can't be a non-working day."
+              must_be_after_start_date: "должно быть после даты начала."
+          cannot_be_a_non_working_day: "не может быть нерабочим днем."
         query:
           attributes:
             project:
@@ -1436,7 +1436,7 @@ ru:
               cannot_be_in_another_project: "не может быть в другом проекте."
               not_a_valid_parent: "имеет неверное значение."
             schedule_manually:
-              cannot_be_automatically_scheduled: "cannot be set to false (automatically scheduled) as it has no predecessors or children."
+              cannot_be_automatically_scheduled: "не может быть установлено значение false (автоматическое планирование), так как у него нет предшественников или дочерних элементов."
             start_date:
               violates_relationships: "может быть установлено лишь в %{soonest_start} или позднее и без нарушения взаимосвязи рабочих пакетов."
               cannot_be_null: "не может быть нулевым, поскольку известны дата окончания и продолжительность."
@@ -2679,8 +2679,8 @@ ru:
   label_deleted_custom_item: "(удалено)"
   label_deleted_custom_option: "(удалённая опция)"
   label_empty_element: "(пусто)"
-  label_go_back: "Go back one menu level"
-  label_go_forward: "Open %{module} sub-menu"
+  label_go_back: "Вернуться на один уровень меню назад"
+  label_go_forward: "Открыть подменю %{module}"
   label_missing_or_hidden_custom_option: "(отсутствует значение или недостаточно прав для доступа)"
   label_descending: "По убыванию"
   label_details: "Детали"
@@ -2980,7 +2980,7 @@ ru:
   label_query_new: "Новый запрос"
   label_query_plural: "Пользовательские запросы"
   label_read: "Читать..."
-  label_read_documentation: "Read documentation"
+  label_read_documentation: "Читать документацию"
   label_register: "Создайте новую учетную запись"
   label_register_with_developer: "Зарегистрируйтесь как разработчик"
   label_registered_on: "Зарегистрированы на"
@@ -4414,7 +4414,7 @@ ru:
       code_500_outbound_request_failure: "Исходящий запрос к другому ресурсу не удался с кодом статуса %{status_code}."
       code_500_missing_enterprise_token: "Запрос не может быть обработан из-за недействительного или отсутствующего корпоративного токена."
       bad_request:
-        emoji_reactions_activity_type_not_supported: "This activity type does not support emoji reactions."
+        emoji_reactions_activity_type_not_supported: "Этот тип деятельности не поддерживает реакции эмодзи."
       not_found:
         work_package: "Пакет работ, который вы ищете, не найден или был удален."
       expected:

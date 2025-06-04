@@ -5,7 +5,7 @@ ja:
       remove: 'ウィジェットを削除'
       configure: 'ウィジェットの設定'
       widgets:
-        missing_permission: "このウィジェットを観覧するために必要な権限がありません。"
+        missing_permission: "このウィジェットを表示する権限がありません。"
         custom_text:
           title: 'カスタムテキスト'
         documents:

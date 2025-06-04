@@ -15,7 +15,7 @@ ru:
           oauth2_sso_with_two_way_oauth2_fallback: Аутентификация Single-Sign-On с двухсторонней OAuth 2.0 как резервная
           two_way_oauth2: Двусторонняя аутентификация OAuth 2.0
         storage_audience: Аудитория хранилища
-        token_exchange_scope: Storage Scope
+        token_exchange_scope: Объем хранения
       storages/project_storage:
         project_folder: Папка проекта
         project_folder_mode: Режим папки проекта
@@ -227,11 +227,11 @@ ru:
       project_folders: Папки проекта
       redirect_uri: URI перенаправления
       storage_audience_blank: Аудитория не была настроена.
-      storage_audience_description: Exchanging tokens for audience "%{audience}".
-      storage_audience_idp: Using access token obtained by identity provider during login, regardless of audience.
+      storage_audience_description: Обмен токенами для аудитории "%{audience}".
+      storage_audience_idp: Использование токена доступа, полученного поставщиком идентификационных данных при входе в систему, независимо от аудитории.
       storage_oauth: Nextcloud OAuth
       storage_provider: Поставщик хранилища
-      token_exchange: Token Exchange
+      token_exchange: Обмен токенами
     health:
       actions:
         download_report: Скачать
@@ -355,9 +355,9 @@ ru:
         integration: Администрирование Nextcloud / OpenProject
         oauth_configuration: Скопируйте эти значения из %{application_link_text}.
         provider_configuration: Пожалуйста, убедитесь, что у вас есть права администрирования в копии Nextcloud, и перед установкой настроен %{application_link_text}.
-        storage_audience: The client ID that the Nextcloud instance uses to communicate with the identity provider.
+        storage_audience: Идентификатор клиента, который Nextcloud использует для связи с поставщиком идентификационных данных.
         storage_audience_placeholder: например, nextcloud
-        token_exchange_scope: The scopes that should be requested during token exchange, each one separated by a space.
+        token_exchange_scope: Объемы, которые должны быть запрошены во время обмена токенами, каждый из которых разделен пробелом.
       no_specific_folder: По умолчанию каждый пользователь при загрузке файла начинает работу со своей собственной домашней папки.
       no_storage_set_up: Нет настроенных хранилищ файлов.
       not_logged_into_storage: Чтобы выбрать папку проекта, сначала войдите
@@ -391,7 +391,7 @@ ru:
     label_edit_storage_access_management: Редактировать управление доступом к хранилищу
     label_edit_storage_automatically_managed_folders: Редактирование хранилища автоматически управляемых папок
     label_edit_storage_host: Изменить узел хранения
-    label_edit_token_exchange: Edit token exchange configuration
+    label_edit_token_exchange: Редактировать конфигурацию обмена токенами
     label_existing_manual_folder: Существующая папка с разрешениями, управляемыми вручную
     label_file_storage: Файловое хранилище
     label_host: URL хоста
@@ -484,13 +484,13 @@ ru:
       description: Отключение этой опции скроет список вложений на вкладке "Файлы" у пакетов работ. Файлы, прикрепленные в описании пакета работ, по-прежнему будут загружаться во внутреннее хранилище вложений.
       label: Показывать вложения во вкладке "Файлы" пакетов работ
     storage_audience:
-      documentation_intro: Please read our documentation for details on the following options and configuration of the identity provider.
+      documentation_intro: Пожалуйста, ознакомьтесь с нашей документацией для подробной информации о следующих опциях и конфигурации поставщика идентификационных данных.
       idp:
-        helptext: OpenProject will use the access token received by the identity provider during log in to authenticate requests to the storage. It will not try to obtain another token.
-        label: Use access token obtained during user log in
+        helptext: OpenProject будет использовать токен доступа, полученный поставщиком идентификационных данных при входе в систему, для аутентификации запросов к хранилищу. Он не будет пытаться получить другой токен.
+        label: Использовать токен доступа, полученный при входе пользователя
       manual:
-        helptext: OpenProject will exchange a token with the identity provider for the given audience.
-        label: Manually specify audience for which to exchange access token
+        helptext: OpenProject обменяется токеном с поставщиком идентификационных данных для данной аудитории.
+        label: Вручную укажите аудиторию, для которой необходимо обменять токен доступа
     storage_list_blank_slate:
       description: Добавьте хранилище, чтобы увидеть его здесь.
       heading: У вас пока нет хранилищ.
