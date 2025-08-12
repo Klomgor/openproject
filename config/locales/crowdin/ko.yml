@@ -374,7 +374,7 @@ ko:
       description: 사용자를 그룹화하여 동일한 프로젝트에 멤버로 추가하거나 동일한 글로벌 역할을 할당할 수 있습니다.
     table_component:
       blank_slate:
-        description: 특정 이름으로 사용자 그룹을 정의할 수 있습니다.
+        description: You can define named groups of users with specific permissions.
         title: 아직 설정된 그룹 없음
       user_count: 사용자 수
     users:

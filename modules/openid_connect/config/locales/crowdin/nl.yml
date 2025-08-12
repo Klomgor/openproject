@@ -59,7 +59,6 @@ nl:
     delete_title: "OpenID Connect provider verwijderen"
     group_links_heading: OpenID Connect group links
     instructions:
-      redirect_url: This is the redirect URL that the OpenID Connect provider should use to redirect back to OpenProject after a successful login.
       endpoint_url: De endpoint URL die u van de OpenID Connect provider heeft gekregen
       group_regexes: One regular expression pattern per line. Please read [the documentation](docs_url) for more information on how to do this.
       group_regexes_detail: Optionally define patterns using regular expressions to match group names from the groups claim. For example, entering a pattern like <code>^Level1/Level2/([\w/]+)$</code> will extract the group “Groupname/SubGroup” from a response including “Level1/Level2/GroupName/SubGroup”. If no pattern matches, the group is ignored. Leave empty to synchronize all groups using their full group name.
@@ -67,6 +66,7 @@ nl:
       groups_claim: Specify the name of the claim that's expected to indicate the group names that the user is a member of.
       metadata_none: Ik heb deze informatie niet
       metadata_url: Ik heb een URL voor een zoekeindpunt
+      oidc_information: These values are needed to configure the OpenID Connect provider.
       client_id: Dit is de client-ID die u van uw OpenID Connect provider hebt gekregen
       client_secret: Dit is de client-ID die u van uw OpenID Connect provider hebt gekregen
       limit_self_registration: If enabled, users can only register using this provider if configuration on the provider's end allows it.

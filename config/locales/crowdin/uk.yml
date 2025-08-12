@@ -355,9 +355,9 @@ uk:
       blueprint: "Шаблон плану"
   global_search:
     title:
-      all_projects: 'Пошук за терміном "%{search_term}" у всіх проєктах'
-      current_project: 'Пошук за терміном "%{search_term}" у проєкті "%{project_name}"'
-      project_and_subprojects: 'Пошук за терміном "%{search_term}" у проєкті "%{project_name}" і всіх підпроєктах'
+      all_projects: 'Пошук за терміном «%{search_term}» у всіх проєктах'
+      current_project: 'Пошук за терміном «%{search_term}» у проєкті «%{project_name}»'
+      project_and_subprojects: 'Пошук за терміном «%{search_term}» у проєкті «%{project_name}» і всіх підпроєктах'
     placeholder: "Пошук у додатку %{app_title}"
     overwritten_tabs:
       all: "Усі"
@@ -367,10 +367,10 @@ uk:
     edit:
       synchronized_groups: "Синхронізовані групи"
     index:
-      description: Згрупувавши користувачів, можна додавати їх в одні й ті самі проєкти або призначати їм однакові глобальні ролі.
+      description: Згрупувавши користувачів, можна додавати їх як членів в одні й ті самі проєкти або призначати їм однакові глобальні ролі.
     table_component:
       blank_slate:
-        description: Для груп користувачів можна вказувати назви.
+        description: You can define named groups of users with specific permissions.
         title: Ще немає налаштованих груп
       user_count: Кількість користувачів
     users:
@@ -728,7 +728,7 @@ uk:
             project: "Проєкт"
         pattern:
           label: "Шаблон теми"
-          caption: Створіть шаблони, додаючи текст, або введіть "/", щоб знайти [підтримувані атрибути](attributes_url).
+          caption: Створіть шаблони, додаючи текст, або введіть «/», щоб знайти [підтримувані атрибути](attributes_url).
           insert_as_text: "Атрибутів не знайдено. Додайте як текст: «%{word}»"
       export_configuration:
         tab: "Згенерувати PDF"

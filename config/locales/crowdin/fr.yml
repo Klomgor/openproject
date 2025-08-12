@@ -374,7 +374,7 @@ fr:
       description: En regroupant les utilisateurs, vous pouvez les ajouter en tant que membres aux mêmes projets ou leur attribuer les mêmes rôles globaux.
     table_component:
       blank_slate:
-        description: Vous pouvez définir des groupes d'utilisateurs avec des noms spécifiques.
+        description: You can define named groups of users with specific permissions.
         title: Aucun groupe n'a encore été configuré
       user_count: Nombre d'utilisateurs
     users:
@@ -1619,7 +1619,7 @@ fr:
         one: "Fournisseur d'authentification"
         other: "Fournisseurs d'authentification"
       category: "Catégorie"
-      color: "Color"
+      color: "Couleur"
       comment: "Commentaire"
       custom_action: "Action personnalisée"
       custom_field: "Champ personnalisé"

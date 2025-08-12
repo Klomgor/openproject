@@ -119,7 +119,7 @@ pt-PT:
   label_meeting_date_time: "Data/Hora"
   label_meeting_date_and_time: "Data e hora"
   label_meeting_diff: "Diferença"
-  label_meeting_send_updates: "Send email calendar updates"
+  label_meeting_send_updates: "Enviar atualizações do calendário por e-mail"
   label_recurring_meeting: "Reunião recorrente"
   label_recurring_meeting_part_of: "Parte de uma série de reuniões"
   label_recurring_meeting_new: "Nova reunião recorrente"
@@ -216,7 +216,7 @@ pt-PT:
         body: "A reunião \"%{title}\" foi remarcada por %{actor}."
         old_date_time: "Data/hora antiga"
         new_date_time: "Nova data/hora"
-    label_mail_all_participants: "Email calendar invite to all participants"
+    label_mail_all_participants: "Enviar convite de calendário por e-mail a todos os participantes"
     types:
       one_time: "Única"
       recurring: "Recorrente"
@@ -266,36 +266,36 @@ pt-PT:
         title: "Atualizações do calendário por e-mail"
         description:
           disabled: "Os participantes não receberão um e-mail a informá-los das alterações."
-          enabled: "All participants will receive updated calendar invites via email informing them of changes."
-          change_via_template: "To change this, edit the series template."
+          enabled: "Todos os participantes receberão convites de calendário atualizados por e-mail, com informações sobre as alterações."
+          change_via_template: "Para alterar, edite o modelo de série."
       dialog:
         title:
-          enable: "Enable email calendar updates?"
-          disable: "Disable email calendar updates?"
+          enable: "Ativar atualizações do calendário por e-mail?"
+          disable: "Desativar atualizações do calendário por e-mail?"
         message:
           enable: >
-            All participants will receive updated calendar invites via email every time there is a change to the meeting date, time, location or participants. Once enabled, an email will be sent out immediately to all participants.
+            Todos os participantes receberão convites de calendário atualizados por e-mail sempre que houver uma alteração na data, hora, local ou participantes da reunião. Uma vez ativado, será enviado imediatamente um e-mail a todos os participantes.
           disable: >
-            Participants will no longer receive updated calendar invites via email when there are changes to the meeting date, time, location or participants. If they already had an invite for this meeting, it might no longer be accurate.
+            Os participantes deixarão de receber convites de calendário atualizados por e-mail quando houver alterações a data, hora, local ou participantes da reunião. Se já tiverem um convite para esta reunião, este poderá já não estar correto.
         confirm_label:
-          enable: "Enable email updates"
-          disable: "Disable email updates"
+          enable: "Ativar atualizações por e-mail"
+          disable: "Desativar atualizações por e-mail"
       banner:
         onetime:
           enabled: >
-            All participants will receive updated calendar invites via email informing them of your changes.
+            Todos os participantes receberão convites de calendário atualizados por e-mail, com informações sobre as suas alterações.
           disabled: >
-            Email calendar updates are disabled. Participants will not receive an email informing them of your changes.
+            As atualizações do calendário por e-mail estão desativadas. Os participantes não receberão um e-mail a informar sobre as suas alterações.
         occurrence:
           enabled: >
-            Email calendar updates are enabled for the meeting series. All participants will receive updated calendar invites informing them of your changes to this occurrence.
+            As atualizações da agenda de e-mail estão ativadas para as séries de reuniões. Todos os participantes receberão convites atualizados da agenda a informar sobre as suas alterações nesta ocorrência.
           disabled: >
-            Email calendar updates are disabled for the meeting series. Participants will not receive an email informing them of your changes to this occurrence.
+            As atualizações da agenda de e-mail estão desativadas para as séries de reuniões. Os participantes não vão receber um e-mail a informar sobre as suas alterações nesta ocorrência.
         template:
           enabled: >
-            Email calendar updates are enabled for the meeting series. All participants will receive updated calendar invites informing them of your changes to this template or to individual occurrences.
+            As atualizações da agenda de e-mail estão ativadas para as séries de reuniões. Todos os participantes receberão convites atualizados da agenda a informar sobre as suas alterações a este modelo ou a ocorrências individuais.
           disabled: >
-            Email calendar updates are disabled for the meeting series. Participants will not receive an email informing them of your changes to this template or to individual occurrences.
+            As atualizações da agenda de e-mail estão desativadas para as séries de reuniões. Os participantes não vão receber um e-mail a informar sobre as suas alterações a ocorrências individuais.
   meeting_section:
     untitled_title: "Secção sem título"
     delete_confirmation: "A eliminação da secção também irá eliminar os seus pontos da ordem de trabalhos. Tem a certeza de que pretende fazê-lo?"
@@ -383,7 +383,7 @@ pt-PT:
       confirm_button: "Cancelar ocorrência"
     end_series_dialog:
       title: "Terminar série de reuniões"
-  notice_successful_notification: "Email calendar update sent to all participants"
+  notice_successful_notification: "Atualização de calendário por e-mail enviada a todos os participantes"
   notice_timezone_missing: Sem fuso horário definido, presume-se %{zone}. Para escolher o seu fuso horário, por favor clique aqui.
   notice_meeting_updated: "Esta página foi atualizada por outra pessoa. Recarregue para ver as alterações."
   permission_create_meetings: "Criar reuniões"
@@ -426,6 +426,8 @@ pt-PT:
   label_agenda_item_undisclosed_wp: "Pacote de trabalho #%{id} não visível"
   label_agenda_item_deleted_wp: "Referência do pacote de trabalho excluída"
   label_agenda_item_actions: "Ações dos itens da agenda"
+  label_agenda_item_move_to_next_title: "Move to next meeting?"
+  label_agenda_item_move: "Move"
   label_agenda_item_move_to_next: "Ir para a próxima reunião"
   label_agenda_item_move_to_backlog: "Mover para o backlog"
   label_agenda_item_move_to_current_meeting: "Mover para reunião atual"
@@ -496,12 +498,12 @@ pt-PT:
   text_add_work_package_to_meeting_description: "Um pacote de trabalho pode ser adicionado a uma ou várias reuniões para discussão. Quaisquer notas relacionadas a ele também serão visíveis aqui."
   text_agenda_item_no_notes: "Nenhuma nota fornecida."
   text_agenda_item_not_editable_anymore: "Este item da agenda não pode ser mais editado."
-  text_agenda_item_move_next_meeting: "Tem a certeza de que quer mover este ponto para a próxima reunião a %{date} às %{time}?"
+  text_agenda_item_move_next_meeting: "This item will be moved to the next meeting on %{date} at %{time}."
   text_agenda_item_moved_to_next_meeting: "Ponto da ordem de trabalhos transferido para a reunião seguinte, a %{date}"
   text_work_package_has_no_upcoming_meeting_agenda_items: "Este pacote de trabalho ainda não está agendado em uma reunião futura."
   text_agenda_item_move_next_meeting_cancelled: "Não é possível mover para a próxima reunião uma vez que foi cancelada."
   text_work_package_add_to_meeting_hint: 'Use o botão "Adicionar à reunião" para adicionar este pacote de trabalho a uma reunião futura.'
   text_work_package_has_no_past_meeting_agenda_items: "Este pacote de trabalho não foi mencionado numa reunião anterior."
-  text_email_updates_muted: "Email calendar updates are muted. Participants will not receive updated invites via email when you make changes."
-  text_email_updates_enabled: "Email calendar updates are enabled. All participants will receive updated invites via email when you make changes."
+  text_email_updates_muted: "As atualizações do calendário por e-mail estão silenciadas. Os participantes não receberão convites atualizados por e-mail quando fizer alterações."
+  text_email_updates_enabled: "As atualizações do calendário por e-mail estão ativadas. Todos os participantes receberão convites atualizados por e-mail quando fizer alterações."
 

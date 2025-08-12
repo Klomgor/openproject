@@ -59,7 +59,6 @@ it:
     delete_title: "Elimina fornitore OpenID Connect"
     group_links_heading: Link di gruppo OpenID Connect
     instructions:
-      redirect_url: Questo è l'URL di reindirizzamento che il fornitore OpenID Connect deve utilizzare per reindirizzare a OpenProject dopo un accesso riuscito.
       endpoint_url: L'URL dell'endpoint fornito dal fornitore OpenID Connect
       group_regexes: Una espressione regolare per riga. Consulta la [documentazione](docs_url) per maggiori informazioni.
       group_regexes_detail: Facoltativamente, definisci pattern utilizzando espressioni regolari per trovare nomi di gruppo dal claim dei gruppi. Ad esempio, inserendo un pattern come <code>^Level1/Level2/([\w/]+)$</code> verrà estratto il gruppo “Groupname/SubGroup” da una risposta che include “Level1/Level2/GroupName/SubGroup”. Se nessun pattern corrisponde, il gruppo viene ignorato. Lascia vuoto per sincronizzare tutti i gruppi utilizzando il loro nome completo.
@@ -67,6 +66,7 @@ it:
       groups_claim: Specifica il nome della richiesta che dovrebbe indicare i nomi dei gruppi di cui l'utente è membro.
       metadata_none: Non ho queste informazioni
       metadata_url: Ho un URL endpoint di ricerca
+      oidc_information: These values are needed to configure the OpenID Connect provider.
       client_id: Questo è l'ID client che ti viene assegnato dal tuo fornitore OpenID Connect
       client_secret: Questa è la chiave segreta del client che ti viene assegnata dal tuo fornitore OpenID Connect
       limit_self_registration: Se l'opzione è abilitata, gli utenti possono registrarsi utilizzando questo fornitore solo se la configurazione da parte del fornitore lo consente.

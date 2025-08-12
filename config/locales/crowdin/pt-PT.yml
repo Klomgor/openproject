@@ -120,34 +120,34 @@ pt-PT:
         label_token: "Token"
         one_time_hint: "Esta é a única vez que verá este token. Não se esqueça de o copiar agora."
       delete_scim_client_dialog_component:
-        title: "Delete SCIM client"
-        heading: "Are you sure you want to delete this SCIM client?"
-        description: "Users managed by this SCIM client can no longer be updated by it."
+        title: "Eliminar o cliente SCIM"
+        heading: "Tem a certeza de que quer eliminar este cliente SCIM?"
+        description: "Os utilizadores geridos por este cliente SCIM já não podem ser atualizados por ele."
       edit:
-        label_delete_scim_client: "Delete SCIM client"
+        label_delete_scim_client: "Eliminar o cliente SCIM"
       form:
         auth_provider_description: "Este é o serviço que os utilizadores adicionados pelo fornecedor SCIM utilizarão para se autenticarem no OpenProject."
-        authentication_method_description_html: "This is how the SCIM client authenticates at OpenProject. Please ensure that OAuth tokens include the <code>scim_v2</code> scope."
-        description: "Please refer to our [documentation on configuring SCIM clients](docs_url) for more information on these configuration options."
-        jwt_sub_description: "For example, for Keycloak, this is the UUID of the service account  associated with the SCIM client. Consult [our documentation](docs_url) to learn how to find  the subject claim for your use case."
+        authentication_method_description_html: "É assim que o cliente SCIM se autentica no OpenProject. Garanta que os tokens OAuth incluem o âmbito <code>scim_v2</code>."
+        description: "Consulte a nossa [documentação sobre a configuração de clientes SCIM] (docs_url) para obter mais informações sobre estas opções de configuração."
+        jwt_sub_description: "Por exemplo, para o Keycloak, este é o UUID da conta de serviço associada ao cliente SCIM. Consulte [a nossa documentação](docs_url) para saber como encontrar a declaração de assunto para o seu caso."
         name_description: "Escolha um nome que ajude os outros administradores a perceber melhor porque é que este cliente foi configurado."
       index:
-        description: "SCIM clients configured here are able to interact with OpenProject SCIM server API to provision, update, and deprovision user accounts and groups."
-        label_create_button: "Add SCIM client"
+        description: "Os clientes SCIM aqui configurados conseguem interagir com a API do servidor OpenProject SCIM para prover, atualizar e desprover contas e grupos de utilizadores."
+        label_create_button: "Adicionar cliente SCIM"
       new:
-        title: "New SCIM client"
+        title: "Novo cliente SCIM"
       revoke_static_token_dialog_component:
         confirm_button: "Revogar"
         title: "Revogar token estático"
         heading: "Tem a certeza de que deseja revogar este token?"
-        description: "The SCIM client that uses this token will no longer be able to access OpenProject's SCIM server API."
+        description: "O cliente SCIM que utiliza este token deixará de poder aceder à API do servidor SCIM do OpenProject."
       table_component:
         blank_slate:
-          title: "No SCIM clients configured yet"
+          title: "Ainda não há clientes SCIM configurados"
           description: "Adicione clientes para os ver aqui"
         user_count: "Utilizadores"
       token_list_component:
-        description: "The tokens you generate here can be passed by a SCIM client to access the OpenProject SCIM API."
+        description: "Os tokens que gerar aqui podem ser passados por um cliente SCIM para aceder à API do OpenProject SCIM."
         heading: "Tokens"
         label_add_token: "Token"
         label_aria_add_token: "Adicionar token"
@@ -357,9 +357,9 @@ pt-PT:
       blueprint: "Modelo do plano"
   global_search:
     title:
-      all_projects: 'Search for "%{search_term}" in all projects'
-      current_project: 'Search for "%{search_term}" in %{project_name}'
-      project_and_subprojects: 'Search for "%{search_term}" in %{project_name} and all subprojects'
+      all_projects: 'Pesquisar por "%{search_term}" em todos os projetos'
+      current_project: 'Pesquisar por "%{search_term}" em %{project_name}'
+      project_and_subprojects: 'Pesquisar por “%{search_term}” em %{project_name} e em todos os sub-projetos'
     placeholder: "Pesquisar em %{app_title}"
     overwritten_tabs:
       all: "Todas"
@@ -367,13 +367,13 @@ pt-PT:
       wiki_pages: "Wiki"
   groups:
     edit:
-      synchronized_groups: "Synchronized groups"
+      synchronized_groups: "Grupos sincronizados"
     index:
-      description: By grouping users together, you can add them as members to the same projects or assign the same global roles to them.
+      description: Ao agrupar utilizadores, pode adicioná-los como membros aos mesmos projetos ou atribuir-lhes as mesmas funções globais.
     table_component:
       blank_slate:
-        description: You can define groups of users with specific names.
-        title: No groups set up yet
+        description: You can define named groups of users with specific permissions.
+        title: Ainda não foram configurados grupos
       user_count: Número de utilizadores
     users:
       no_results_title_text: Atualmente, não existem utilizadores pertencentes a este grupo.
@@ -382,8 +382,8 @@ pt-PT:
     synchronized_groups:
       blankslate:
         action: Definições da autenticação
-        description: When this group is automatically synced with groups in external identity providers like OpenID, they will appear here. You can set this up in your Authentication settings.
-        title: No synchronized groups yet
+        description: Quando este grupo é automaticamente sincronizado com grupos em fornecedores de identidade externos, como OpenID, aparecem aqui. Pode definir isto nas suas definições de autenticação.
+        title: Ainda não existem grupos sincronizados
   incoming_mails:
     ignore_filenames: >
       Especifique uma lista de nomes a ignorar ao processar anexos para emails recebidos (por exemplo, assinaturas ou ícones). Digite um nome de ficheiro por linha.
@@ -685,7 +685,7 @@ pt-PT:
     dark: "Escuro"
     light: "Claro"
     light_high_contrast: "Contraste alto claro"
-    sync_with_os: "Automatic (match OS colour mode)"
+    sync_with_os: "Automático (corresponder ao modo de cor do SO)"
   types:
     index:
       no_results_title_text: Atualmente, não existem tipos.
@@ -717,7 +717,7 @@ pt-PT:
             project: "Projecto"
         pattern:
           label: "Padrão do tema"
-          caption: Create patterns by adding text, or type "/" to search for [supported attributes](attributes_url).
+          caption: Crie padrões adicionando texto ou escreva "/" para procurar [atributos suportados](attributes_url).
           insert_as_text: "Não foram encontrados atributos. Adicionar como texto: \"%{word}\""
       export_configuration:
         tab: "Gerar PDF"
@@ -1171,7 +1171,7 @@ pt-PT:
         comments_sorting: "Exibir a atividade do pacote de trabalho ordenada por"
         disable_keyboard_shortcuts: "Desativar atalhos de teclado"
         disable_keyboard_shortcuts_caption_html: |-
-          You can choose to disable default <a href="%{href}">keyboard shortcuts</a> if you use a screen  reader or want to avoid accidentally triggering an action with a shortcut.
+          Pode optar por desativar <a href="%{href}">atalhos de teclado</a> predefinidos se utilizar um leitor de ecrã, ou se quiser evitar desencadear acidentalmente uma ação com um atalho.
         dismissed_enterprise_banners: "Faixas de empresas ocultas"
         impaired: "Modo de acessibilidade"
         auto_hide_popups: "Ocultar automaticamente os banners de sucesso"
@@ -1267,7 +1267,7 @@ pt-PT:
         inclusion_nested: "não está definido como um dos valores permitidos no caminho '%{path}'."
         invalid: "é inválido."
         invalid_characters: "contém caracteres inválidos."
-        not_allowed_custom_fields_referenced: "contains custom fields that are not allowed: %{custom_fields}."
+        not_allowed_custom_fields_referenced: "contém campos personalizados que não são permitidos: %{custom_fields}."
         invalid_url: "não é um URL válido."
         invalid_url_scheme: "não é um protocolo suportado (permitido: %{allowed_schemes})."
         less_than_or_equal_to: "deve ser menor ou igual a %{count}."
@@ -1287,7 +1287,7 @@ pt-PT:
         odd: "deve ser ímpar."
         regex_match_failed: "não corresponde à expressão regular %{expression}."
         regex_invalid: "não pode ser validado com a expressão regular associada."
-        regex_list_invalid: "could not be parsed as regular expression in lines %{invalid_lines}."
+        regex_list_invalid: "não foi possível analisar como expressão regular nas linhas %{invalid_lines}."
         smaller_than_or_equal_to_max_length: "deve ser menor ou igual ao comprimento máximo."
         taken: "já está a ser utilizado."
         too_long: "é muito longo (o máximo é %{count} caracteres)."

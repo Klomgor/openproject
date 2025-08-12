@@ -371,7 +371,7 @@ zh-CN:
       description: 通过将用户分组到一起，您可以将他们添加为同一项目的成员，也可以将相同的全局角色分配给他们。
     table_component:
       blank_slate:
-        description: 您可以使用特定名称定义用户群组。
+        description: You can define named groups of users with specific permissions.
         title: 尚未设置群组
       user_count: 用户数
     users:

@@ -373,7 +373,7 @@ zh-TW:
       description: 透過將使用者分組，您可以將他們新增為相同專案的成員，或指派相同的全局角色給他們。
     table_component:
       blank_slate:
-        description: 您可以定義具有特定名稱的使用者群組。
+        description: You can define named groups of users with specific permissions.
         title: 尚未建立群組
       user_count: 用户數
     users:
@@ -1606,7 +1606,7 @@ zh-TW:
       auth_provider:
         other: "驗證提供者"
       category: "類別"
-      color: "Color"
+      color: "顏色"
       comment: "留言"
       custom_action: "自訂動作"
       custom_field: "客製欄位"

@@ -373,7 +373,7 @@ ru:
       description: By grouping users together, you can add them as members to the same projects or assign the same global roles to them.
     table_component:
       blank_slate:
-        description: You can define groups of users with specific names.
+        description: You can define named groups of users with specific permissions.
         title: Группы еще не созданы
       user_count: Количество пользователей
     users:

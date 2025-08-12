@@ -373,7 +373,7 @@ pt-BR:
       description: Agrupando usuários, você pode adicioná-los como membros aos mesmos projetos ou atribuir as mesmas funções globais a eles.
     table_component:
       blank_slate:
-        description: Você pode definir grupos de usuários com nomes específicos.
+        description: You can define named groups of users with specific permissions.
         title: Nenhum grupo configurado até o momento
       user_count: Contagem de usuários
     users:

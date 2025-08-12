@@ -22,10 +22,10 @@ uk:
         storage: Сховище
         storage_url: URL-адреса сховища
       storages/share_point_storage:
-        host: Sharepoint Site URL
-        library: Library ID
-        name: Name
-        site: Site ID
+        host: URL-адреса сайту SharePoint
+        library: Ідентифікатор бібліотеки
+        name: Назва
+        site: Ідентифікатор сайту
       storages/storage:
         authentication_method: Метод автентифікації
         creator: Автор
@@ -37,7 +37,7 @@ uk:
     errors:
       messages:
         invalid_host_url: не є дійсною URL-адресою.
-        invalid_sharepoint_url: is not a valid SharePoint site, library, or document URL.
+        invalid_sharepoint_url: не є дійсним сайтом, бібліотекою або документом SharePoint.
         not_linked_to_project: '– не пов’язано з проєктом.'
       models:
         storages/file_link:
@@ -87,7 +87,7 @@ uk:
     edit_project_folder:
       label: Редагувати папку проєкту
     open:
-      contact_admin: Please contact your administrator to resolve this error.
+      contact_admin: Зверніться до свого адміністратора, щоб розв’язати цю проблему.
       remote_identity_error: Під час підключення до сховища сталася неочікувана помилка.
     project_folder_mode:
       automatic: Автоматичне керування
@@ -135,7 +135,7 @@ uk:
               conflict: 'Користувача %{user} не вдалося додати в групу %{group} з такої причини: %{reason}'
               failed_to_add: 'Користувача %{user} не вдалося додати в групу %{group} з такої причини: %{reason}'
             create_folder:
-              conflict: The folder %{folder_name} already exists on %{parent_location}.
+              conflict: Папка «%{folder_name}» уже існує в розташуванні %{parent_location}.
               not_found: "%{parent_location} не знайдено."
             ensure_root_folder_permissions:
               not_found: "%{group_folder} не знайдено. Перевірте налаштування своєї папки групи Nextcloud."
@@ -149,7 +149,7 @@ uk:
               conflict: 'Користувача %{user} не вдалося вилучити з групи «%{group}» з такої причини: %{reason}'
               failed_to_remove: 'Користувача %{user} не вдалося вилучити з групи «%{group}» з такої причини: %{reason}'
             rename_project_folder:
-              conflict: OpenProject could not rename the project folder to %{current_path} as a folder with the same name already exists
+              conflict: OpenProject не вдалося змінити назву папки проєкту на «%{current_path}», оскільки папка з такою назвою вже існує
               forbidden: Користувач OpenProject не має доступу до папки %{current_path}.
               not_found: "%{current_path} не знайдено."
             set_folders_permissions:
@@ -175,7 +175,7 @@ uk:
               not_found: "%{current_path} не знайдено."
             set_folders_permissions:
               permission_not_set: не вдалося встановити дозволи за шляхом %{path}.
-          error: An unexpected error occurred. Please ensure that OneDrive is reachable and check OpenProject worker logs for more information
+          error: Сталася неочікувана помилка. Переконайтеся, що є доступ до OneDrive, і перевірте журнали працівників OpenProject, щоб дізнатися більше.
           not_allowed: OpenProject не має дозволу на доступ до вашого диска OneDrive. Перевірте дозволи, установлені в програмі Azure.
           unauthorized: Не вдалося синхронізувати OpenProject із OneDrive. Перевірте конфігурацію свого сховища й додатку Azure.
           user_does_not_exist: "%{user} не існує в Nextcloud."
@@ -194,7 +194,7 @@ uk:
     configuration_checks:
       oauth_client_incomplete:
         nextcloud: Надайте OpenProject доступ до даних Nextcloud із використанням OAuth.
-        one_drive: Allow OpenProject to access Azure data using OAuth to connect OneDrive.
+        one_drive: Надайте OpenProject доступ до даних Azure із використанням OAuth для підключення OneDrive.
         share_point: Надайте OpenProject доступ до даних SharePoint із використанням OAuth.
       redirect_uri_incomplete:
         one_drive: Завершіть налаштування за допомогою правильного URI переспрямування.
@@ -311,7 +311,7 @@ uk:
         od_drive_id_not_found: Налаштований ідентифікатор Drive ID не знайдено. Перевірте конфігурацію.
         od_oauth_request_not_found: Кінцеву точку для отримання підключеного зараз користувача не знайдено. Щоб дізнатися більше, перевірте журнали сервера.
         od_oauth_request_unauthorized: Поточний користувач не має дозволу на доступ до віддаленого файлового сховища. Щоб дізнатися більше, перевірте журнали сервера.
-        od_oauth_token_missing: OpenProject не може перевірити з’єднання на рівні користувача з OneDrive, оскільки користувач досі не зв’язав свій обліковий запис Microsoft.
+        od_oauth_token_missing: OpenProject не може перевірити з’єднання на рівні користувача з OneDrive, оскільки користувач досі не прив’язав свій обліковий запис Microsoft.
         od_tenant_id_wrong: Налаштований ідентифікатор каталогу (клієнта) недійсний. Перевірте конфігурацію.
         od_test_folder_exists: Папка %{folder_name}, необхідна для тестування, уже існує. Видаліть її та повторіть спробу.
         od_unexpected_content: На диску знайдено неочікуваний контент.
@@ -343,10 +343,10 @@ uk:
         warning: Деякі перевірки завершилися з попередженням. Це може призвести до неочікуваної поведінки.
       title: Звіт про стан справності
     health_email_notifications:
-      description_disabled: Admins will not receive updates by email when there are important updates.
-      description_enabled: Admins will receive updates by email when there are important updates.
+      description_disabled: Адміністратори не отримуватимуть електронні листи про важливі оновлення.
+      description_enabled: Адміністратори отримуватимуть електронні листи про важливі оновлення.
       error_could_not_be_saved: Не вдалося зберегти налаштування сповіщень електронною поштою. Повторіть спробу.
-      title: Email updates to admins
+      title: Електронні листи для адміністраторів про оновлення
     help_texts:
       project_folder: Папка проєкту – це папка за замовчуванням для файлів, які передаються в цей проєкт. Однак користувачі можуть передавати файли в інші розташування.
       project_folder_bulk: Папка проєкту – це папка за замовчуванням, у якій зберігаються додані файли для всіх вибраних проєктів. Ви можете змінити її окремо в налаштуваннях кожного проєкту. Однак користувачі все одно можуть додавати файли в інші папки.
@@ -392,7 +392,7 @@ uk:
       setting_up_storages_non_admin: Адміністратори можуть налаштовувати файлові сховища в розділі «Адміністрування» / «Файлові сховища».
       share_point:
         application_link_text: Сайт SharePoint
-        integration: Адміністрування SharePoint/OpenProject
+        integration: Адміністрування SharePoint / OpenProject
         oauth_configuration: 'Скопіюйте ці значення з потрібного додатка в цей: %{application_link_text}.'
         provider_configuration: Перш ніж виконувати налаштування, переконайтеся, що у вас є права адміністратора в додатку %{application_link_text}, або зверніться до свого адміністратора Microsoft. На порталі вам також знадобиться зареєструвати додаток Azure або скористатися наявним під час автентифікації.
       type: 'Перш ніж виконувати налаштування, переконайтеся, що маєте права адміністратора у своєму екземплярі Nextcloud і що встановлено цей додаток:'

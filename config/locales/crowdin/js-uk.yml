@@ -298,7 +298,7 @@ uk:
           "16_3":
             standard:
               new_features_html: >
-                The release contains various new features and improvements, such as <br> <ul class="%{list_styling_class}"> <li>UX/UI improvements for a more modern look.</li> <li>Meetings: Option to mute email notifications and ICS.</li> <li>Ongoing timers shown in the My time tracking module.</li> <li>Progress reporting: % Complete sum also shown in Status-based mode.</li> <li>Nextcloud Health check: Indicate missing token exchange capability (Enterprise add-on).</li> </ul>
+                Випуск містить різні нові функції і покращення, зокрема: <br> <ul class="%{list_styling_class}"> <li>вдосконалення UX/UI для сучаснішого вигляду;</li> <li>можливість тимчасово вимкнути надсилання електронних листів зі сповіщеннями й ICS для нарад;</li> <li>поточні таймери, що відображаються в модулі «Мій облік часу»;</li> <li>відображення «% завершення» в підсумках звітів про перебіг виконання також у режимі «На основі статусу»;</li> <li>виявлення відсутньої можливості обміну маркерами при перевірці стану Nextcloud (у доповненні версії Enterprise).</li> </ul>
     ical_sharing_modal:
       title: "Підписатися на календар"
       inital_setup_error_message: "Під час отримання даних сталася помилка."
